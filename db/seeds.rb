@@ -9,6 +9,7 @@
 
 Post.destroy_all
 City.destroy_all
+User.destroy_all
   City.create(
   [
     {
@@ -36,3 +37,6 @@ City.destroy_all
       image: "https://www.visittheusa.com/sites/default/files/styles/hero_m_1300x700/public/images/hero_media_image/2016-11/Drone.__72%20DPI.jpg?itok=jhGikGPz"
     }
   ])
+
+  User.create(name: "Sample User", email: "sample@sample.com", password: "asdf", current_city: "San Francisco")
+  Post.create({title: "Sample Post", message: "There are no posts yet for this city! This is the template showing how your post will appear on the page. Log in to create a new post.", user: User.first})
