@@ -6,11 +6,11 @@
 </div>
 
 <div class="post_background">
-  <% if session[:user_id] == nil %>
-    <button class="btn waves-effect waves-light new-post"><%= link_to "Add New Post", new_post_path %></button>
-  <% else %>
-    <button class="btn waves-effect waves-light new-post"><%= link_to "Add New Post", new_post_path %></button>
-  <% end %>
+    <a href="<%= new_post_path %>">
+      <button class="btn waves-effect waves-light new-post">
+        Add New Post
+      </button>
+    </a>
   <% flash.each do |name, msg| %>
    <p class="new-post-error">
      <%= name.capitalize %>: <%= msg %>
