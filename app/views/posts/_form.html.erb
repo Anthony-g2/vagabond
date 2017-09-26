@@ -1,0 +1,11 @@
+<%= form_for post do |f| %>
+  <div class="input-field">
+    <%= f.label "Title", for: :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="input-field">
+    <%= f.label "Message", for: :message %>
+    <%= f.text_area :message, class: "text_box" %>
+  </div>
+  <%= f.submit class: "btn waves-effect waves-light" %>
+<% end %>

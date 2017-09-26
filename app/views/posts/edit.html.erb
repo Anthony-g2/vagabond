@@ -1,16 +1,7 @@
 <div class="post_body page_body container">
   <h1>Edit Post</h1>
 
-  <%= form_for @post do |f| %>
-
-    <div>
-      <%= f.text_field :title, placeholder: "Title" %>
-    </div>
-    <div>
-      <%= f.text_area :message, placeholder: "Message" %>
-    </div>
-    <%= f.submit class: "btn waves-effect waves-light" %>
-  <% end %>
+  <%= render 'form', post: @post %>
   <br>
   <%= link_to material_icon.arrow_back, user_path(@user) %>
 
