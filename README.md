@@ -1,24 +1,11 @@
-# README
+# Vagabond
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This social web app was designed to allow users post about their experiences in different locations. Featured user profiles, posts, comments, voting system, and user UI. Coded both through peer coding and Git version control.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Technologies used:
+ 
+ Ruby on Rails - MVC framework
+ Materialize   - Styling
+ GitHub        - Team version control
+ bcrypt        - Password hashing
+ 
